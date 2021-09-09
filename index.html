@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Design</title>
+    <!-- Font Awesome library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/master.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js">   </script>
+</head>
+
+<body>
+    <!-- Start Settings -->
+    <div class="settings-box">
+        <div class="toggle-settings">
+            <i class="fas fa-cog fa-spin dark-icon"></i>
+        </div>
+        <div class="settings-container">
+            <!-- Colors -->
+            <div class="option-box">
+                <h4>Colors</h4>
+                <ul class="colors-list">
+                    <li class="active" data-color="#cc5040"></li>
+                    <li data-color="#e91e63"></li>
+                    <li data-color="#009688"></li>
+                    <li data-color="#03A9F4"></li>
+                    <li data-color="#4CAF50"></li>
+                </ul>
+            </div>
+            <!-- Background -->
+            <div class="option-box">
+                <h4>Random Background</h4>
+                <div class="random-background">
+                    <span class="yes active" data-background="yes">Yes</span>
+                    <span class="no" data-background="no">No</span>
+                </div>
+            </div>
+            <!-- Show & Hide Bullets -->
+            <div class="option-box">
+                <h4>Show Bullets</h4>
+                <div class="bullets-option">
+                    <span class="yes active" data-display="show">Show</span>
+                    <span class="no" data-display="hide">Hide</span>
+                </div>
+            </div>
+            <!-- Dark Mode -->
+            <button class="dark-mode-button btn-switch top-dark-mode-button" aria-label="dark mode toggle">
+                <span aria-hidden="true" class="dark-toggle">
+                    <span class="DTspan"></span>
+                </span>
+            </button>
+            <!-- Rest Settings -->
+            <button class="rest-options">Rest Options <i class="fas fa-recycle"></i></button>
+        </div>
+    </div>
+    <!-- End Settings -->
+
+    <!-- Start Scroll Top -->
+    <span class="up"><i class="fas fa-arrow-alt-circle-up"></i></span>
+    <!-- End Scroll Top -->
+
+    <!-- Start Nav Bullets -->
+    <div class="nav-bullets">
+        <div class="bullet" data-section=".about-us">
+            <div class="tooltip">
+                About Us
+            </div>
+        </div>
+        <div class="bullet" data-section=".our-skills">
+            <div class="tooltip">
+                Our Skills
+            </div>
+        </div>
+        <div class="bullet" data-section=".our-gallery">
+            <div class="tooltip">
+                Our Gallery
+            </div>
+        </div>
+        <div class="bullet" data-section=".timeline">
+            <div class="tooltip">
+                Timeline
+            </div>
+        </div>
+        <div class="bullet" data-section=".our-features">
+            <div class="tooltip">
+                Features
+            </div>
+        </div>
+        <div class="bullet" data-section=".testimonials">
+            <div class="tooltip">
+                Testimonials
+            </div>
+        </div>
+    </div>
+    <!-- End Bullets -->
+
+    <!-- Start Landing -->
+    <div class="landing">
+        <div class="overlay"></div>
+        <div class="header-area">
+            <div class="container">
+                <div class="content">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="images/logo.png" alt="logo-image">
+                        </a>
+                    </div>
+                    <div class="links-container">
+                        <ul class="links-header">
+                            <li><a href="#" data-section=".about-us">About</a></li>
+                            <li><a href="#" data-section=".our-skills">Skills</a></li>
+                            <li><a href="#" data-section=".our-gallery">Gallery</a></li>
+                            <li><a href="#" data-section=".timeline">Timeline</a></li>
+                            <li><a href="#" data-section=".our-features">Features</a></li>
+                            <li><a href="#" data-section=".testimonials">Testimonials</a></li>
+                            <li><a href="#" data-section=".testimonials">About</a></li>
+                        </ul>
+                        <i class="fas fa-bars toggle-menu"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="introduction-text">
+                <h1>We Are <span>Creative</span> Agency</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et commodi eius quas vero enim minus!</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Landing -->
+
+    <!-- Start About -->
+    <div class="about-us">
+        <div class="container">
+            <div class="about-content">
+                <div class="text">
+                    <h2 class="topic-heading">About Us</h2>
+                    <p class="pargh">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt architecto
+                        ducimus
+                        voluptatibus, aliquid impedit error reprehenderit alias sed minima repellat.
+                    </p>
+                    <a href="#" class="btn-design">Learn More</a>
+                </div>
+                <div class="image">
+                    <img src="images/about-us.jpg" alt="about-image">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End About -->
+
+    <!-- Start Our Skills -->
+    <div class="our-skills">
+        <div class="container">
+            <div class="main-heading">
+                <h2>Our Skills</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quia, sunt numquam consequatur
+                    quis sit.</p>
+            </div>
+            <div class="content">
+                <div class="image">
+                    <img src="images/skills.jpg" alt="skill-image">
+                </div>
+                <div class="skills-info">
+                    <div class="skills">
+                        <div class="skill-column">
+                            <div class="skill-label">HTML</div>
+                            <div class="skill-icons">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="skill-column">
+                            <div class="skill-label">CSS</div>
+                            <div class="skill-icons">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="skill-column">
+                            <div class="skill-label">JAVASCRIPT</div>
+                            <div class="skill-icons">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                            </div>
+                        </div>
+                        <div class="skill-column">
+                            <div class="skill-label">BOOTSTRAP</div>
+                            <div class="skill-icons">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                            </div>
+                        </div>
+                        <div class="skill-column">
+                            <div class="skill-label">Angular</div>
+                            <div class="skill-icons">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="skill-column">
+                            <div class="skill-label">REACTJS</div>
+                            <div class="skill-icons">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Our Skills -->
+
+    <!-- Start Our Gallery -->
+    <div class="our-gallery">
+        <div class="container">
+            <div class="main-heading">
+                <h2>Our Gallery</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quia, sunt numquam consequatur
+                    quis sit.</p>
+            </div>
+            <div class="images-box">
+                <img src="images/01.jpg" alt="Image One">
+                <img src="images/02.jpg" alt="Image Two">
+                <img src="images/01.jpg" alt="Image Three">
+                <img src="images/04.jpg" alt="Image Four">
+                <img src="images/05.jpg" alt="Image Five">
+                <img src="images/01.jpg" alt="Image Six">
+                <img src="images/02.jpg" alt="Image Seven">
+                <img src="images/01.jpg" alt="Image Eight">
+                <img src="images/04.jpg" alt="Image Nine">
+                <img src="images/05.jpg" alt="Image Ten">
+            </div>
+        </div>
+    </div>
+    <!-- End Our Gallery -->
+
+    <!-- Start Timeline -->
+    <div class="timeline">
+        <div class="container">
+            <div class="main-heading">
+                <h2>History Jobs</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quia, sunt numquam consequatur
+                    quis sit.</p>
+            </div>
+            <div class="timeline-content">
+                <div class="year">
+                    2019
+                </div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Testing Heading</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iure accusantium earum
+                            exercitationem magnam odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Placeat, omnis.
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Testing Heading</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iure accusantium earum
+                            exercitationem magnam odit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum,
+                            perspiciatis?
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="year">
+                    2020
+                </div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Testing Heading</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iure accusantium earum
+                            exercitationem magnam odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Placeat, omnis.
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Testing Heading</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iure accusantium earum
+                            exercitationem magnam odit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum,
+                            perspiciatis?
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="year">
+                    2021
+                </div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Testing Heading</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iure accusantium earum
+                            exercitationem magnam odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Placeat, omnis.
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Testing Heading</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iure accusantium earum
+                            exercitationem magnam odit! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum,
+                            perspiciatis?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Timeline -->
+
+    <!-- Start Our Features-->
+    <div class="our-features">
+        <div class="container">
+            <div class="main-heading">
+                <h2>Our Features</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quia, sunt numquam consequatur
+                    quis sit.</p>
+            </div>
+            <div class="features-info">
+                <div class="feat-box">
+                    <div class="image">
+                        <img src="images/features01.png" alt="feature-image">
+                    </div>
+                    <h4>Development</h4>
+                    <p>We are profession markteeers, We will do anything you imagine in no time</p>
+                </div>
+                <div class="feat-box">
+                    <div class="image">
+                        <img src="images/features02.png" alt="feature-image">
+                    </div>
+                    <h4>Marketing</h4>
+                    <p>We are profession markteeers, We will do anything you imagine in no time</p>
+                </div>
+                <div class="feat-box">
+                    <div class="image">
+                        <img src="images/features03.png" alt="feature-image">
+                    </div>
+                    <h4>hosting</h4>
+                    <p>We are profession markteeers, We will do anything you imagine in no time</p>
+                </div>
+                <div class="feat-box">
+                    <div class="image">
+                        <img src="images/features04.png" alt="feature-image">
+                    </div>
+                    <h4>Database</h4>
+                    <p>We are profession markteeers, We will do anything you imagine in no time</p>
+                </div>
+                <div class="feat-box">
+                    <div class="image">
+                        <img src="images/features05.png" alt="feature-image">
+                    </div>
+                    <h4>Cloud & Servers</h4>
+                    <p>We are profession markteeers, We will do anything you imagine in no time</p>
+                </div>
+                <div class="feat-box">
+                    <div class="image">
+                        <img src="images/features06.png" alt="feature-image">
+                    </div>
+                    <h4>SEO</h4>
+                    <p>We are profession markteeers, We will do anything you imagine in no time</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Our Features -->
+
+    <!-- Start Testimonials "Client Reviews"-->
+    <div class="testimonials">
+        <div class="container">
+            <div class="main-heading">
+                <h2>Testimonials</h2>
+            </div>
+            <div class="ts-box">
+                <p class="pargh">I'm very happy with the product its amazing and i receive very fast and the price was
+                    amazing.</p>
+                <div class="person-info">
+                    <img src="images/ts01.png" alt="ts-image">
+                    <h4>Eslam Afify</h4>
+                    <p>CEO At Company</p>
+                </div>
+            </div>
+            <div class="ts-box">
+                <p class="pargh">I'm very happy with the product its amazing and i receive very fast and the price was
+                    amazing.</p>
+                <div class="person-info">
+                    <img src="images/ts02.png" alt="ts-image">
+                    <h4>Odai Muhammed</h4>
+                    <p>Manager At Company</p>
+                </div>
+            </div>
+            <div class="ts-box">
+                <p class="pargh">I'm very happy with the product its amazing and i receive very fast and the price was
+                    amazing.</p>
+                <div class="person-info">
+                    <img src="images/ts03.png" alt="ts-image">
+                    <h4>Malak Talaat</h4>
+                    <p>Head At Company</p>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!-- End Testimonials -->
+
+    <!-- Start Contact Us -->
+    <div class="contact-us">
+        <div class="container">
+            <div class="main-heading">
+                <h2>Contact Us</h2>
+                <p>If you have any problems, or If you want to share something to improve your experience, Contact with
+                    us now.</p>
+            </div>
+            <div class="info">
+                <h4>Company Name</h4>
+                <div class="data">
+                    <p class="pargh">15st. Port Said, Sirs Eliaan, Menofia Governorate, Egypt</p>
+                    <div class="contacting-info">
+                        <div class="contact-box">
+                            <i class="fas fa-phone"></i>
+                            <div class="phone">
+                                <p>+20 0123456789</p>
+                                <p>+20 0123456789</p>
+                            </div>
+                        </div>
+                        <div class="email-box">
+                            <i class="fas fa-envelope"></i>
+                            <p>company_email123@emai.com</p>
+                        </div>
+                    </div>
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+            </div>
+            <div class="content">
+                <form action="">
+                    <input type="text" placeholder="Name:">
+                    <input type="email" placeholder="Email:">
+                    <input type="text" placeholder="Country:">
+                    <input type="number" placeholder="Phone:">
+                    <textarea name=""></textarea>
+                    <button type="submit" class="btn-design">Send Message</button>
+                </form>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217928.50922446875!2d34.24860902018042!3d31.410462708645394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14fd844104b258a9%3A0xfddcb14b194be8e7!2sGaza%20Strip!5e0!3m2!1sen!2sly!4v1631106761362!5m2!1sen!2sly"
+                    width="35%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End Contact Us -->
+
+    <!-- Start Footer -->
+    <div class="footer">
+        <div class="container">
+            <img src="images/logo.png" alt="logo" />
+            <p>We Are Social Media</p>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f fa-2x"></i>
+                <i class="fab fa-twitter fa-2x"></i>
+                <i class="fab fa-github fa-2x"></i>
+                <i class="fab fa-linkedin fa-2x"></i>
+            </div>
+            <p class="copyright-text">
+                &copy; 2021, <span>Eslam Afify Barakat </span> All Right Reserved
+            </p>
+        </div>
+    </div>
+    <!-- End Footer -->
+    <script src="js/master.js"></script>
+
+</body>
+
+</html>
