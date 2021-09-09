@@ -156,7 +156,7 @@ a {
   min-height: 100vh;
   transition: 0.3s;
   border: 2px solid var(--secondary-color);
-  color:#000;
+  color: #000;
 }
 .open {
   left: 0;
@@ -837,11 +837,11 @@ body.dark-mode p {
   padding-bottom: var(--section-padding);
   background-color: var(--background-section);
 }
-.timeline .main-heading p {
-  color:#666 !important;
-}
 .timeline h2 {
   color: rgb(126, 10, 10) !important;
+}
+.timeline .main-heading p {
+  color: #666 !important;
 }
 .timeline .timeline-content {
   position: relative;
@@ -1083,6 +1083,7 @@ body.dark-mode p {
   line-height: 1.5;
   font-size: 18px;
   font-style: italic;
+  color: #666 !important;
 }
 .testimonials .ts-box .person-info {
   overflow: hidden;
