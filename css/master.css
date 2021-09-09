@@ -837,6 +837,12 @@ body.dark-mode p {
   padding-bottom: var(--section-padding);
   background-color: var(--background-section);
 }
+.timeline .main-heading p {
+  color:#666 !important;
+}
+.timeline h2 {
+  color: rgb(126, 10, 10) !important;
+}
 .timeline .timeline-content {
   position: relative;
   overflow: hidden;
