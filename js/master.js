@@ -36,6 +36,14 @@ if (backgroundLocalItem !== null) {
     backgroundOption = false;
   }
 
+  if (!backgroundOption) {
+    let imagePath = localStorage.getItem("background-path");
+    if (imagePath !== null && imagePath !== undefined) {
+      let landingPage = document.querySelector(".landing");
+      landingPage.style.backgroundImage = imagePath;
+    }
+  }
+
   //Remove Active Class From All Span
   document.querySelectorAll(".random-background span").forEach((element) => {
     element.classList.remove("active");
@@ -63,15 +71,30 @@ document.querySelector(".toggle-settings .fa-cog").onclick = function () {
   colorsLi.forEach((colorLi) => {
     //Click On Every List Items
     colorLi.addEventListener("click", (e) => {
+      //Set Color On Local Storage
+      localStorage.setItem("color-option", e.target.dataset.color);
+      mainColor = e.target.dataset.color;
+
+      // Start Skills
+
+      $(document).ready(function () {
+        $(".skill-icons")
+          .children(".active")
+          .each(function (i) {
+            var row = $(this);
+            setTimeout(function () {
+              row.css("background", mainColor ? mainColor : "#cc5040");
+            }, 100 * i);
+          });
+      });
+      // End Skills
+
       //Set Color On Root
       // console.log(e.target.dataset.color);
       document.documentElement.style.setProperty(
         "--main-color",
         e.target.dataset.color
       );
-
-      //Set Color On Local Storage
-      localStorage.setItem("color-option", e.target.dataset.color);
 
       //Remove Active Class From All Children
       handleActive(e);
@@ -97,6 +120,7 @@ document.querySelector(".toggle-settings .fa-cog").onclick = function () {
         backgroundOption = false;
         clearInterval(backgroundInterval);
         localStorage.setItem("background-option", false);
+        localStorage.setItem("background-path", currentImg);
       }
     });
   });
@@ -106,6 +130,7 @@ document.querySelector(".toggle-settings .fa-cog").onclick = function () {
 let landingPage = document.querySelector(".landing");
 //Get Array Of Images
 let imgsArray = ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg"];
+let currentImg = "images/01.jpg";
 
 //Function To Randomize Images
 function randomizeImgs() {
@@ -115,7 +140,7 @@ function randomizeImgs() {
       let randomNumber = Math.floor(Math.random() * imgsArray.length);
 
       //Change Background Image URL
-      landingPage.style.backgroundImage =
+      currentImg = landingPage.style.backgroundImage =
         'url("images/' + imgsArray[randomNumber] + '")';
     }, 5000);
   }
@@ -167,6 +192,7 @@ document.querySelector(".rest-options").onclick = function () {
 
   local = localStorage.removeItem("color-option");
   local = localStorage.removeItem("background-option");
+  local = localStorage.removeItem("background-path");
   local = localStorage.removeItem("bullets-option");
   local = localStorage.removeItem("darkMode");
   window.location.reload();
@@ -229,7 +255,7 @@ ourGallery.forEach((img) => {
     popupBox.className = "popup-box";
 
     if (img.alt !== null) {
-      //Create Heading Image
+      //Create Heading
       let imageHeading = document.createElement("h3");
 
       //Create Text For imageHeading
@@ -364,7 +390,6 @@ span.onclick = function () {
 /* Body */
 const body = document.querySelector("body");
 
-
 // Dark Mode Action
 let darkMode = localStorage.getItem("darkMode");
 const darkModeToggle = document.querySelector(".dark-mode-button");
@@ -398,4 +423,3 @@ darkModeToggle.addEventListener("click", () => {
 // Footer button, optional. This is for if you have a second dark mode toggle button
 //in the footer, just make sure the button is inside the footer tag, and it will be
 //linked to this function.
-
