@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="css/master.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -35,11 +35,11 @@
             <div class="option-box">
                 <h4>Colors</h4>
                 <ul class="colors-list">
-                    <li class="active" data-color="#cc5040"></li>
-                    <li data-color="#e91e63"></li>
-                    <li data-color="#009688"></li>
-                    <li data-color="#03A9F4"></li>
-                    <li data-color="#4CAF50"></li>
+                    <li class="active" data-color="#03a9f4"></li>
+                    <li data-color="#E53532"></li>
+                    <li data-color="#FCA70C"></li>
+                    <li data-color="#2969B3"></li>
+                    <li data-color="#33B583"></li>
                 </ul>
             </div>
             <!-- Background -->
@@ -59,13 +59,16 @@
                 </div>
             </div>
             <!-- Dark Mode -->
-            <button class="dark-mode-button btn-switch top-dark-mode-button" aria-label="dark mode toggle">
-                <span aria-hidden="true" class="dark-toggle">
-                    <span class="DTspan"></span>
-                </span>
-            </button>
+            <div class="option-box">
+                <h4>Dark & Light</h4>
+                <button class="dark-mode-button btn-switch top-dark-mode-button" aria-label="dark mode toggle">
+                    <span aria-hidden="true" class="dark-toggle">
+                        <span class="DTspan"></span>
+                    </span>
+                </button>
+            </div>
             <!-- Rest Settings -->
-            <button class="rest-options">Rest Options <i class="fas fa-recycle"></i></button>
+            <button class="rest-options">Rest</i></button>
         </div>
     </div>
     <!-- End Settings -->
@@ -137,9 +140,12 @@
         </div>
         <div class="container">
             <div class="introduction-text">
-                <h1>We Are <span>Creative</span> Agency</h1>
-                <p>I have a dream that my four little children will one day live in a nation where they will not be judged by the color of
-                their skin but by the content of their character</p>
+                <h1>We Are <span>Creative</span> Agency<br />to create web and mobile Apps</h1>
+                <p>I have a dream that my four little children will one day live in a nation where they will not be
+                    judged by the color of
+                    their skin but by the content of their character</p>
+                <input class="search-kit" type="search" placeholder="How Can I help you ?">
+                <i class="fas fa-search search-icon"></i>
             </div>
         </div>
     </div>
@@ -151,8 +157,9 @@
             <div class="about-content">
                 <div class="text">
                     <h2 class="topic-heading">About Us</h2>
-                    <p class="pargh">Life throws curveballs. And while there might be blockers to success, it's imperative to keep pushing with the knowledge
-                    mistakes will be made and failure is inevitable
+                    <p class="pargh">Life throws curveballs. And while there might be blockers to success, it's
+                        imperative to keep pushing with the knowledge
+                        mistakes will be made and failure is inevitable
                     </p>
                     <a href="#" class="btn-design">Learn More</a>
                 </div>
@@ -531,12 +538,35 @@
         <div class="container">
             <img src="images/logo.png" alt="logo" />
             <p>We Are Social Media</p>
-            <div class="social-icons">
-                <i class="fab fa-facebook-f fa-2x"></i>
-                <i class="fab fa-twitter fa-2x"></i>
-                <i class="fab fa-github fa-2x"></i>
-                <i class="fab fa-linkedin fa-2x"></i>
-            </div>
+            <section id="ContactUs">
+                <div class="social-overlap process-scetion mt100">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <div class="social-bar">
+                                    <div class="social-icons mb-3 iconpad text-center">
+                                        <a href="#" target="_blank" class="slider-nav-item"><i
+                                                class="fab fa-facebook"></i></a>
+                                        <a href="#" target="_blank" class="slider-nav-item"><i
+                                                class="fab fa-google-plus"></i></a>
+                                        <a href="#" target="_blank" class="slider-nav-item"><i
+                                                class="fab fa-twitter"></i></a>
+                                        <a href="#" target="_blank" class="slider-nav-item"><i
+                                                class="fab fa-instagram"></i></a>
+                                        <a href="#" target="_blank" class="slider-nav-item"><i
+                                                class="fab fa-linkedin"></i></a>
+                                        <a href="#" target="_blank" class="slider-nav-item"><i
+                                                class="fab fa-pinterest"></i></a>
+                                        <a href="#" target="_blank" class="slider-nav-item"><i
+                                                class="fab fa-skype"></i></a>
+                                        <a href="#" class="slider-nav-item"><i class="fab fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <p class="copyright-text">
                 &copy; 2021, <span>Eslam Afify Barakat </span> All Right Reserved
             </p>

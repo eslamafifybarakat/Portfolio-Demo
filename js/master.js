@@ -83,7 +83,7 @@ document.querySelector(".toggle-settings .fa-cog").onclick = function () {
           .each(function (i) {
             var row = $(this);
             setTimeout(function () {
-              row.css("background", mainColor ? mainColor : "#cc5040");
+              row.css("background", mainColor ? mainColor : "#03a9f4");
             }, 100 * i);
           });
       });
@@ -226,7 +226,7 @@ $(document).ready(function () {
     .each(function (i) {
       var row = $(this);
       setTimeout(function () {
-        row.css("background", mainColor ? mainColor : "#cc5040");
+        row.css("background", mainColor ? mainColor : "#03a9f4");
       }, 100 * i);
     });
 });
@@ -351,6 +351,7 @@ toggleBtn.addEventListener("click", (e) => {
 //Click Anywhere Outside Menu & Toggle Button
 document.addEventListener("click", (e) => {
   if (e.target !== toggleBtn && e.target !== tLinks) {
+    e.stopPropagation();
     //Check If Menu Is Open
     if (tLinks.classList.contains("open")) {
       //Toggle Class "menu-active" On Button
@@ -384,6 +385,7 @@ span.onclick = function () {
 };
 
 // End Scroll Top
+
 
 //Dark Mode
 
@@ -420,6 +422,4 @@ darkModeToggle.addEventListener("click", () => {
   }
 });
 
-// Footer button, optional. This is for if you have a second dark mode toggle button
-//in the footer, just make sure the button is inside the footer tag, and it will be
-//linked to this function.
+// End Dark Mode
