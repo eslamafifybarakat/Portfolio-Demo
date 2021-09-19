@@ -164,7 +164,7 @@ a {
 .settings-box .toggle-settings {
   position: absolute;
   right: 0px;
-  top: 100px;
+  top: 40%;
   background-color: white;
   text-align: center;
   right: -40px;
